@@ -1,0 +1,11 @@
+:root {
+    --offwhite: rgba(237,237,238,1);
+    --red: rgba(253,53,13,1);
+    --white: rgba(255,255,255,1);
+    --black: rgba(0,0,0,1);
+    --offblack: rgba(44,52,50,1);
+}
+
+body {
+    background-color: var(--black);
+}
