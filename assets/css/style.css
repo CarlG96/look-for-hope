@@ -9,3 +9,11 @@
 body {
     background-color: var(--black);
 }
+
+.red-text {
+    color: var(--red);
+}
+
+p {
+    font-size: 3rem;
+}
