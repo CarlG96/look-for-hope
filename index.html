@@ -15,10 +15,10 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-md-8 white-text text-center">
-                <h1>Look For Hope</h1>
+                <h1 class="reveal-text mt-3">Look For Hope</h1>
                 <p class="p-3">Lookforhope.org was for a season. Covid is not 'over' - it probably never will be,
                     but this website has served its purpose for now.
 
@@ -36,9 +36,17 @@
                 <img src="/assets/images/look-for-hope.png" alt="Look for hope logo">
             </div>
         </div>
-        <div class="row ">
-            <div class="center-form white-text text-center">
-                Form
+        <div class="row">
+            <div class="col center-form white-text text-center">
+                <form action="">
+                    <label for="email" class="white-text">Email Address</label>
+                    <input type="email" class="form-control" id="email">
+                    <div class="form-group mb-3">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit Message</button>
+                </form>
             </div>
         </div>
     </div>
