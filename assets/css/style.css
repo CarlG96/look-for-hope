@@ -79,6 +79,10 @@ p {
 	
 }
 
+p.reveal-text {
+    font-size: 1rem;
+}
+
 
 @keyframes clip-text {
 	from {

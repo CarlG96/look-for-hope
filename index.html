@@ -17,17 +17,7 @@
     <script type="text/javascript">
         (function () {
             emailjs.init("OmRIAYDXSDYezqnL6");
-            var templateParams = {
-                name: 'James',
-                notes: 'Check this out!'
-            };
-
-            emailjs.send('default_service', 'template_z92ulcc', templateParams)
-                .then(function (response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                }, function (error) {
-                    console.log('FAILED...', error);
-                });
+            
         })();
     </script>
 </head>
@@ -55,19 +45,24 @@
             </div>
         </div>
         <div class="row">
-            <div class="col center-form white-text text-center">
-                <form action="">
-                    <label for="email" class="white-text">Email Address</label>
-                    <input type="email" class="form-control" id="email">
+            <div class="col center-form white-text text-center" id="form-div">
+                <form onsubmit="return sendMail(this);" id="contact-form">
+                    <label for="from_name" class="white-text">Name</label>
+                    <input type="text" name="from_name" class="form-control" id="from_name" required>
+                    <label for="from_email" class="white-text">Email Address</label>
+                    <input type="email" name="from_email" class="form-control" id="from_email" required>
                     <div class="form-group mb-3">
-                        <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <label for="message">Message</label>
+                        <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-danger">Submit Message</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="assets/js/sendEmail.js">
+
+    </script>
 </body>
 
 </html>
