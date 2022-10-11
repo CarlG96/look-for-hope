@@ -7,7 +7,13 @@
 }
 
 body {
-    background-color: var(--black);
+    
+    /* Created with https://www.css-gradient.com */
+/* Created with https://www.css-gradient.com */
+background: #000000;
+background: -webkit-radial-gradient(right, #000000, #2C3432);
+background: -moz-radial-gradient(right, #000000, #2C3432);
+background: radial-gradient(to left, #000000, #2C3432);
 }
 
 .red-text {
@@ -15,5 +21,15 @@ body {
 }
 
 p {
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
 }
