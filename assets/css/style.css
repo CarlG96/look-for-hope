@@ -16,11 +16,6 @@ background: -moz-radial-gradient(right, #000000, #2C3432);
 background: radial-gradient(to left, #000000, #2C3432);
 }
 
-img {
-	height: 500px;
-	width: 500px;
-}
-
 .red-text {
     color: var(--red);
 }
@@ -123,9 +118,22 @@ p.reveal-text {
 	}
 }
 
+.large-remove {
+	display: none;
+}
+
 @media screen and (max-width: 520px) {
 .small-remove {
 	display: none;
+	width: 500px;
+	height: 500px;
+}
+
+.large-remove {
+	display: initial;
+	width: 236px;
+	height: 236px;
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -136,8 +144,12 @@ p.reveal-text {
 .text-small-p {
 	font-size: 1rem;
 }
+}
 
 
-
-
+@media screen and (max-width: 350px) {
+	.text-small-h1 {
+		font-size: 2rem;
+	}
+}
 
