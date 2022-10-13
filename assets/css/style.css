@@ -16,12 +16,21 @@ background: -moz-radial-gradient(right, #000000, #2C3432);
 background: radial-gradient(to left, #000000, #2C3432);
 }
 
+img {
+	height: 500px;
+	width: 500px;
+}
+
 .red-text {
     color: var(--red);
 }
 
 p {
     font-size: 2rem;
+}
+
+form {
+	margin-bottom: 50px;
 }
 
 .white-text {
@@ -127,8 +136,6 @@ p.reveal-text {
 .text-small-p {
 	font-size: 1rem;
 }
-}
-
 
 
 
