@@ -115,6 +115,20 @@ p.reveal-text {
 }
 
 
+@media screen and (max-width: 520px) {
+.small-remove {
+	display: none;
+}
+
+@media screen and (max-width: 500px) {
+.text-small-h1 {
+	font-size: 3rem;
+}
+
+.text-small-p {
+	font-size: 1rem;
+}
+}
 
 
 
